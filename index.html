@@ -239,3 +239,92 @@
         </p>
     </div>
     <br class="clear">
+    <div class="box">
+      <h4>Foobar</h4>
+      <p>
+        "
+
+                This Ruby program is an adaptation of a classic technical
+                interview problem which displays sequences
+                of the Foobar pattern.
+              "
+      </p>
+    </div>
+    <div class="box">
+      <pre class=" language-ruby">
+        <code class=" language-ruby">
+          "puts "
+          <span class="token string">"How many items do you want to see?"</span>
+          "
+          number "
+          <span class="token operator">=</span>
+          " gets"
+          <span class="token punctuation">.</span>
+          "chomp"
+          <span class="token punctuation">.</span>
+          "to_i"
+
+          array "
+          <span class="token operator">=</span>
+          <span class="token punctuation">[</span>
+          <span class="token punctuation">]</span>
+          <span class="token punctuation">(</span>
+          <span class="token number">1</span>
+          <span class="token punctuation">.</span>
+          <span class="token punctuation">.</span>
+          "number"
+          <span class="token punctuation">)</span>
+          <span class="token punctuation">.</span>
+          <span class="token keyword">each</span>
+          <span class="token keyword">do</span>
+          <span class="token operator">|</span>
+          "t"
+          <span class="token operator">|</span>
+          <span class="token keyword">if</span>
+          " t % "
+          <span class="token number">3</span>
+          <span class="token operator">==</span>
+          <span class="token number">0</span>
+          "  && t % "
+          <span class="token number">5</span>
+          <span class="token operator">==</span>
+          <span class="token number">0</span>
+          "
+
+                array << "
+          <span class="token string">"foobar"</span>
+          <span class="token keyword">elsif</span>
+          " t % "
+          <span class="token number">3</span>
+          <span class="token operator">==</span>
+          <span class="token number">0</span>
+          "
+
+                array << "
+          <span class="token string">"foo"</span>
+          <span class="token keyword">elsif</span>
+          " t % "
+          <span class="token number">5</span>
+          <span class="token operator">==</span>
+          <span class="token number">0</span>
+          "
+
+                array << "
+          <span class="token string">"bar"</span>
+          <span class="token keyword">else</span>
+          "
+
+                array << t
+              "
+          <span class="token keyword">end</span>
+          <span class="token keyword">end</span>
+          "
+
+          puts array
+          puts "
+          <span class="token string">"Goodbye"</span>
+        </code>
+      </pre>
+    </div>
+    <br class="clear">
+          <

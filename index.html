@@ -2,7 +2,13 @@
   <head> 
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700,700i&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="prism-atom-dark.css" type="text/css" media="screen">
+    <link
+    rel="stylesheet"
+    href="prism-atom-dark.css"
+    type="text/css"
+    media="screen"
+    />
+
     <script type="text/javascript" src="prism.js"></script>
     <script type="text/javascript" src="prism.ruby.js"></script>
     <title>Tomie Wheeler</title>
@@ -22,7 +28,7 @@
           <a href="#web-apps" class="nav-link">Web Apps</a>
         </li>
         <li>
-          <a href="skills-and-tools" class="nav-link">Skills & Tools</a>
+          <a href="#skills-and-tools" class="nav-link">Skills & Tools</a>
         </li>
         <li class="hire-me">
           <a href="#hire-me" class="nav-link">Hire Me</a>
@@ -47,185 +53,45 @@
       </p>
     </div>
     <div class="box">
-      <pre class=" language-ruby">
-        <code class=" language-ruby">
-          "
-          puts "
-          <span class="string">"Enter degrees in Celsius: "</span>
-          "
-          celsius "
-          <span class="token operator">=</span>
-          " gets"
-          <span class="token punctuation">.</span>
-          "chomp
+    <pre><code class="language-ruby">
+    puts &quot;Enter degrees in Celsius: &quot;
+    celsius = get.chomp
 
+    def celsius_to_fahrenheit(celsius)
+        fahrenheit = (celsius_to.f * 9) / 5 + 32
+          return fahrenheit
+    end
 
-          "
+    answer = &quot;The temperature is #{celsius_to_fahrenheit(celsius)} degrees fahrenheit&quot;
+      puts answer
 
-          <span class="token keyword">def</span>
-          " celsius_to_fahremheit"
-          <span class="token punctuation">(</span>
-          "celsius"
-          <span class="token punctuation">)</span>
-          "
-              fahrenheit "
-          <span class="token operator">=</span>
-          <span class="token punctuation">(</span>
-          "celsius"
-          <span class="token punctuation">.</span>
-          "to_f "
-          <span class="token operator">*</span>
-          <span class="token number">9</span>
-          <span class="token punctuation">)</span>
-          <span class="token operator">/</span>
-          <span class="token number">5</span>
-          <span class="token operator">+</span>
-          <span class="token number">32</span>
-          <span class="token keywork">return</span>
-          " fahrenheit
-            "
-          <span class="token keyword">end</span>
-          "
-
-            answer "
-          <span class="token operator">=</span>
-          " ""
-
-          <span class="token const">The</span>
-          " temperature is "
-          <span class="token comment" spellcheck="true">#{celsius_to_fahrenheit(celsius)} degrees Fahrenheit"
-          </span>
-          "    puts answer
-            "
-          <span class="token comment" spellcheck="true"># .to_f to change to float from https://stackoverflow.com/question
-          </span>
-          "  s"
-          <span class="token operator">/</span>
-          <span class="token number">40693449</span>
-          <span class="token operator">/</span>
-          "ruby"
-          <span class="token operator">-</span>
-          "temperature"
-          <span class="token operator">-</span>
-          "converter"
-          <span class="token operator">-</span>
-          "
-            using"
-          <span class="token operator">-</span>
-          "user"
-          <span class="token operator">-</span>
-          "input"
-          <span class="token operator">-</span>
-          <span class="token keyword">in</span>
-          <span class="token operator">-</span>
-          "a"
-          <span class="token operator">-</span>
-          "method"
-          <span class="token comment" spellcheck="true">#</span>
-          " puts"
-          <span class="token string">"Goodbye"</span>
-        </code>
-      </pre>
+    puts &quot;Goodbye&quot;
+    </code></pre>
     </div>
     <br class="clear">
     <div class="box">
-      <pre class=" language-ruby">
-        <code class=" language-ruby">
-          "puts "
-          <span class="token string">Enter the number of an item you'd like to find?"</span>
-          "
-            num"
-          <span class="token operator">=</span>
-          " gets"
-          <span class="token punctuation">.</span>
-          "chomp"
-          <span class="token punctuation">.</span>
-          "to_i 
+    <pre><code class="language-ruby">
+      puts &quot;Enter the number of an item you'd like to find?&quot;
+        num = gets.chomp.to_i
 
-            "
-          <span class="token keyword">def</span>
-          " ordinal"
-          <span class="token punctuation">(</span>
-          "num"
-          <span class="token punctuation">)</span>
-          "
-            answer"
-          <span class="token operator">=</span>
-          " num %"
-          <span class="token number">10</span>
-          <span class="token keyword">if</span>
-          " num > "
-          <span class="token number">10</span>
-          " && num <"
-          <span class="token number">14</span>
-          <span class="token keyword">return</span>
-          " ""
-          <span class="token comment" spellcheck="true">#{num}th"</span>
-          <span class="token keyword">elsif</span>
-          " answer"
-          <span class="token operator">==</span>
-          <span class="token number">1</span>
-          <span class="token keyword">return</span>
-          " ""
-          <span class="token comment" spellcheck="true">#{num}st"</span>
-          <span class="token keyword">elsif</span>
-          " answer"
-          <span class="token operator">==</span>
-          <span class="token number">2</span>
-          <span class="token keyword">return</span>
-          " ""
-          <span class="token comment" spellcheck="true">#{num}nd"</span>
-          <span class="token keyword">elsif</span>
-          " answer"
-          <span class="token operator">==</span>
-          <span class="token number">3</span>
-          <span class="token keyword">return</span>
-          " ""
-          <span class="token comment" spellcheck="true">#{num}rd"</span>
-          <span class="token keyword">else</span>
-          <span class="token keyword">return</span>
-          " ""
-          <span class="token comment" spellcheck="true">#{num}th"</span>
-          <span class="token keyword">end</span>
-          <span class="token keyword">end</span>
-          "
+      def ordinal(num)
+        answer = num % 10
+          if num &gt; 10 &amp;&amp; num &lt; 14
+            return &quot;#{num}th&quot;
+          elsif answer == 1
+            return &quot;#{num}st&quot;
+          elsif answer == 2
+            return &quot;#{num}nd&quot;
+          elsif answer == 3
+            return &quot;#{num}rd&quot;
+          else
+            return &quot;#{num}th&quot;
+          end
+      end
 
-            puts ""
-          <span class="token const">Wow</span>
-          <span class="token operator">!</span>
-          <span class="token const">We</span>
-          " found the "
-          <span class="token comment" spellcheck="true">#{ordinal(num)} item."</span>
-          <span class="token comment" spellcheck="true">##used https://learnandlearn.com/ruby-programming/ruby-referance/</span>
-          " ruby"
-          <span class="token operator">-</span>
-          "get"
-          <span class="token operator">-</span>
-          "ordinal"
-          <span class="token operator">-</span>
-          "date"
-          <span class="token operator">-</span>
-          "ordinal"
-          <span class="token operator">-</span>
-          "method"
-          <span class="token operator">-</span>
-          "of"
-          <span class="token operator">-</span>
-          "date"
-          <span class="token operator">-</span>
-          "library"
-          <span class="token operator">-</span>
-          "examples"
-          <span class="token operator">-</span>
-          "
-            explanation"
-          <span class="token keyword">for</span>
-          " ordinal command"
-          <span class="token comment" spellcheck="true">##</span>
-          " puts"
-          <span class="token string">"Goodbye"</span>
-        </code>
-      </pre>
+      puts &quot;Wow! We found the #{oridnal(num)} item&quot;
+      puts &quot;Goodbye&quot;
+      </code></pre>
     </div>
     <div class="box">
       <h4>Ordinal Challenge</h4>
@@ -251,80 +117,36 @@
       </p>
     </div>
     <div class="box">
-      <pre class=" language-ruby">
-        <code class=" language-ruby">
-          "puts "
-          <span class="token string">"How many items do you want to see?"</span>
-          "
-          number "
-          <span class="token operator">=</span>
-          " gets"
-          <span class="token punctuation">.</span>
-          "chomp"
-          <span class="token punctuation">.</span>
-          "to_i"
+    <pre><code class="language-ruby">
+    puts &quot;How many items do you want to see?&quot;
+      number = gets.chomp.to_i
 
-          array "
-          <span class="token operator">=</span>
-          <span class="token punctuation">[</span>
-          <span class="token punctuation">]</span>
-          <span class="token punctuation">(</span>
-          <span class="token number">1</span>
-          <span class="token punctuation">.</span>
-          <span class="token punctuation">.</span>
-          "number"
-          <span class="token punctuation">)</span>
-          <span class="token punctuation">.</span>
-          <span class="token keyword">each</span>
-          <span class="token keyword">do</span>
-          <span class="token operator">|</span>
-          "t"
-          <span class="token operator">|</span>
-          <span class="token keyword">if</span>
-          " t % "
-          <span class="token number">3</span>
-          <span class="token operator">==</span>
-          <span class="token number">0</span>
-          "  && t % "
-          <span class="token number">5</span>
-          <span class="token operator">==</span>
-          <span class="token number">0</span>
-          "
+      array = []
 
-                array << "
-          <span class="token string">"foobar"</span>
-          <span class="token keyword">elsif</span>
-          " t % "
-          <span class="token number">3</span>
-          <span class="token operator">==</span>
-          <span class="token number">0</span>
-          "
-
-                array << "
-          <span class="token string">"foo"</span>
-          <span class="token keyword">elsif</span>
-          " t % "
-          <span class="token number">5</span>
-          <span class="token operator">==</span>
-          <span class="token number">0</span>
-          "
-
-                array << "
-          <span class="token string">"bar"</span>
-          <span class="token keyword">else</span>
-          "
-
-                array << t
-              "
-          <span class="token keyword">end</span>
-          <span class="token keyword">end</span>
-          "
-
-          puts array
-          puts "
-          <span class="token string">"Goodbye"</span>
-        </code>
-      </pre>
+      (1..number).each do |t|   
+        if t % 3 == 0 &amp;&amp; t % 5 == 0
+              
+          array &lt;&lt; &quot;foobar&quot;
+              
+        elsif t % 3 == 0
+              
+          array &lt;&lt; &quot;foo&quot;
+                  
+        elsif t % 5 == 0
+                  
+          array &lt;&lt; &quot;bar&quot;
+                  
+        else 
+                  
+          array &lt;&lt; t
+                  
+        end
+              
+    end
+              
+    puts array
+    puts &quot;Goodbye&quot;
+    </code></pre>
     </div>
     <br class="clear">
     <h3 id="web-apps">Web Apps</h3>
@@ -332,8 +154,8 @@
     <div class="box">
       <h4>Quote Generator</h4>
       <img src="splurty.png" class="full-width">
-      <a href="Splurty">https://splurty-tomie-wheeler.herokuapp.com/</a>
-      <a href="Splurty">https://github.com/tomiewheeler678/Splurty-piggymode</a>
+      <a href="https://splurty-tomie-wheeler.herokuapp.com/" class="links">Splurty-Heroku</a>
+      <a href="https://github.com/tomiewheeler678/Splurty-piggymode" class="links">Splurty-Github</a>
       <p>
         "
                   A database-powered quote generator with a mobile-first
@@ -346,8 +168,8 @@
     <div class="box">
       <h4>Yelp Clone</h4>
       <img src="nomster.png" class="full-width">
-      <a href="Nomster">https://nomster-munchkin-mode.herokuapp.com/</a>
-      <a href="Nomster">https://github.com/tomiewheeler678/Nomster-munchkin-mode</a>
+      <a href="https://nomster-munchkin-mode.herokuapp.com/" class="links">Nomster-Heroku</a>
+      <a href="https://github.com/tomiewheeler678/Nomster-munchkin-mode" class="links">Nomster-Github</a>
       <p>
         "
                 A Yelp clone that integrates with the Google Maos API
@@ -360,8 +182,8 @@
     <div class="box">
       <h4>Two-Sided Market Place</h4>
       <img src="flixter.png" class="full-width">
-      <a href="Flixter">https://flixter-ginger-mode.herokuapp.com/</a>
-      <a href="Flixter">https://github.com/tomiewheeler678/Flixter-gingermode</a>
+      <a href="https://flixter-ginger-mode.herokuapp.com/" class="links">Flixter-Heroku</a>
+      <a href="https://github.com/tomiewheeler678/Flixter-gingermode" class="links">Flixter-Github</a>
       <p>
         "
               A two-sided, video-streaming marketplace platform that 
@@ -374,8 +196,8 @@
     <div class="box">
       <h4>Test Driven Development</h4>
       <img src="grammable.png" class="full-width">
-      <a href="Grammable">https://grammable-ts-mode.herokuapp.com/</a>
-      <a href="Grammable">https://github.com/tomiewheeler678/tsmode</a>
+      <a href="https://grammable-ts-mode.herokuapp.com/" class="links">Grammable-Heroku</a>
+      <a href="https://github.com/tomiewheeler678/tsmode" class="links">grammable-Github</a>
       <p>
         "
               An instagram clone that was built using industry-standard, test-driven
@@ -387,8 +209,8 @@
     <div class="box">
       <h4>Single Page Todo Application</h4>
       <img src="todoster.png" class="full-width">
-      <a href="Todoster">https://todoster-alli-mode.herokuapp.com/</a>
-      <a href="Todoster">https://github.com/tomiewheeler678/allimode</a>
+      <a href="https://todoster-alli-mode.herokuapp.com/" class="links">Todoster-Heroku</a>
+      <a href="https://github.com/tomiewheeler678/allimode" class="links">Todoster-Github</a>
       <p>
         "
               This single-page to-do application features a 
@@ -400,8 +222,8 @@
     <div class="box">
       <h4>Agile Team Project</h4>
       <img src="chess.png" class="full-width">
-      <a href="Pawn Stars">https://github.com/tomiewheeler678/chess-app</a>
-      <a href="Pawn Stars">https://github.com/tomiewheeler678/chess-app-Agile</a>
+      <a href="https://github.com/tomiewheeler678/chess-app" class="links">Pawn Stars-Github</a>
+      <a href="https://github.com/tomiewheeler678/chess-app-Agile" class="links">Pawn Stars-team-Github</a>
       <p>
         "
               Worked on an Agile software development team building
@@ -445,13 +267,13 @@
         </a>
       </p>
       <p>
-        <a href="LinkedIn" class="contact-link">
-                  https://www.linkedin.com/in/tomie-wheeler-513516188/
+        <a href="https://www.linkedin.com/in/tomie-wheeler-513516188/" class="contact-link">
+                  LinkedIn
         </a>
       </p>
       <p>
-        <a href="Github" class="contact-link">
-                  https://github.com/tomiewheeler678
+        <a href="https://github.com/tomiewheeler678" class="contact-link">
+                  Github
         </a>
       </p>
     </div>
